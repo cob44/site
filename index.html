@@ -4,168 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cobrin Studios</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-    
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            background-color: #1a1a1a;
-            color: #f2f2f2;
-        }
-        
-        a { color: #3b82f6; text-decoration: none; }
-        a:hover { color: #60a5fa; text-decoration: underline; }
-        
-        .header-line {
-            border-bottom: 1px solid #404040;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="antialiased min-h-screen">
+<body>
 
-    <div class="container mx-auto px-6 py-12 max-w-5xl">
+    <div class="container">
         
-        <!-- Header -->
-        <header class="mb-12 pb-6 header-line">
-            <h1 class="text-4xl font-bold text-white mb-2">Cobrin Studios</h1>
-            
+        <header class="main-header">
+            <div>
+                <h1>Cobrin Studios</h1>
+                <p class="subtitle">Solo Game Development • Australia</p>
+            </div>
+            <div class="header-socials">
+                <a href="https://x.com/CobrinStudios"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="mailto:hello@cobrin.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
         </header>
 
-        <div class="flex flex-col md:flex-row gap-16">
+        <div class="layout-grid">
             
-            <!-- Sidebar: Fact Sheet -->
-            <aside class="w-full md:w-1/4 space-y-10">
-                <div>
-                    <h2 class="uppercase text-xs font-bold text-gray-500 mb-4 tracking-wider header-line pb-2">Fact Sheet</h2>
-                    <dl class="space-y-4 text-sm">
-                        <div>
-                            <dt class="font-bold text-gray-300">Developer:</dt>
-                            <dd class="text-gray-400">Cobrin Studios<br>Based in Australia</dd>
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h2 class="label">Fact Sheet</h2>
+                    <dl class="fact-list">
+                        <div class="fact-item">
+                            <dt>Developer:</dt>
+                            <dd>Cobrin Studios<br>Based in Australia</dd>
                         </div>
-                        <div>
-                            <dt class="font-bold text-gray-300">Founding Date:</dt>
-                            <dd class="text-gray-400">January, 2025</dd>
+                        <div class="fact-item">
+                            <dt>Founding Date:</dt>
+                            <dd>January, 2025</dd>
                         </div>
-                        <div>
-                            <dt class="font-bold text-gray-300">Website:</dt>
+                        <div class="fact-item">
+                            <dt>Website:</dt>
                             <dd><a href="#">cobrin.com</a></dd>
                         </div>
-                        <div>
-                            <dt class="font-bold text-gray-300">Press / Business Contact:</dt>
-                            <dd><a href="mailto:cob@cobrinstudios.com">hello@cobrin.com</a></dd>
+                        <div class="fact-item">
+                            <dt>Press / Business:</dt>
+                            <dd><a href="mailto:hello@cobrin.com">hello@cobrin.com</a></dd>
                         </div>
-                        <div>
-                            <dt class="font-bold text-gray-300">Social:</dt>
-                            <dd>
-                                <a href="https://x.com/CobrinStudios" target="_blank" class="block">Twitter</a>
-                                <a href="#" target="_blank" class="block">LinkedIn</a>
+                        <div class="fact-item">
+                            <dt>Social:</dt>
+                            <dd class="social-links">
+                                <a href="https://x.com/CobrinStudios" target="_blank">Twitter (X)</a>
+                                <a href="#" target="_blank">LinkedIn</a>
                             </dd>
                         </div>
                     </dl>
                 </div>
 
-                <div>
-                    <h2 class="uppercase text-xs font-bold text-gray-500 mb-4 tracking-wider header-line pb-2">Projects</h2>
-                    <ul class="text-sm space-y-2">
-                        <li><a href="#project-untitled">Project: UNTITLED</a></li>
+                <div class="sidebar-section desktop-only">
+                    <h2 class="label">Jump To</h2>
+                    <ul class="nav-list">
+                        <li><a href="#description">Description</a></li>
+                        <li><a href="#history">History</a></li>
+                        <li><a href="#project-untitled">Current Project</a></li>
+                        <li><a href="#assets">Assets</a></li>
                     </ul>
                 </div>
             </aside>
 
-            <!-- Main Content Area -->
-            <main class="w-full md:w-3/4 space-y-16">
+            <main class="main-content">
                 
-                <!-- Description -->
-                <section>
-                    <h2 class="text-2xl font-bold text-white mb-6 header-line pb-2">Description</h2>
-                    <p class="leading-relaxed text-gray-300 mb-4">
-                        Cobrin Studios is a solo game maker studio dedicated to creating fun, semi-original experiences. This is the breeding ground for any and all ideas I have, and it is my dream and focus to make successful. 
-                    </p>
-                    <p class="leading-relaxed text-gray-300">
-                        mission: Steam release mid 2026
-                    </p>
-                </section>
-
-                <!-- History -->
-                <section>
-                    <h2 class="text-2xl font-bold text-white mb-6 header-line pb-2">History</h2>
-                    <h3 class="text-lg font-bold text-gray-200 mb-2">Early Beginnings</h3>
-                    <p class="leading-relaxed text-gray-300 mb-4">
-                        Founded in 2025, Cobrin Studios is an attempt at making simulacrums to take ease the mundanity and chaos of life
-                    </p>
-                </section>
-
-                <!-- Projects (Current) -->
-                <section id="project-untitled">
-                    <h2 class="text-2xl font-bold text-white mb-6 header-line pb-2">Projects</h2>
-                    
-                    <div class="bg-[#262626] border border-[#404040] p-6 mb-8">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-xl font-bold text-white">Project: UNTITLED</h3>
-                            <span class="bg-yellow-600 text-white text-[10px] px-2 py-1 uppercase tracking-widest font-bold">In Development</span>
-                        </div>
-                        <p class="text-gray-400 text-sm mb-4 italic">Web & Mobile • Expected 2026</p>
-                        <p class="text-gray-300 mb-6 leading-relaxed">
-                            wwwwwwwwwwwwwwwwwwwwwwwwwwwwww.
+                <section id="description">
+                    <h2 class="section-title">Description</h2>
+                    <div class="prose">
+                        <p>
+                            Cobrin Studios is a solo game maker studio dedicated to creating fun, semi-original experiences. This is the breeding ground for any and all ideas I have, and it is my dream and focus to make successful. 
                         </p>
-                        <div class="flex gap-4">
-                            <div class="w-32 h-20 bg-[#1a1a1a] border border-[#404040] flex items-center justify-center">
-                                <span class="text-xs text-gray-600">Screenshot 01</span>
+                        <p class="highlight">
+                            Current Mission: Steam release mid 2026.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="history">
+                    <h2 class="section-title">History</h2>
+                    <h3>Early Beginnings</h3>
+                    <p class="text-gray">
+                        Founded in 2025, Cobrin Studios is an attempt at making simulacrums to ease the mundanity and chaos of life.
+                    </p>
+                </section>
+
+                <section id="project-untitled">
+                    <h2 class="section-title">Projects</h2>
+                    
+                    <div class="project-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Project: UNTITLED</h3>
+                                <p class="card-meta">Web & Mobile • Expected 2026</p>
                             </div>
-                            <div class="w-32 h-20 bg-[#1a1a1a] border border-[#404040] flex items-center justify-center">
-                                <span class="text-xs text-gray-600">Screenshot 02</span>
+                            <span class="badge">In Development</span>
+                        </div>
+                        
+                        <p class="card-desc">
+                            A brief description of the project goes here. Replace the placeholder text with an elevator pitch for the game mechanics, the genre, and the unique selling point.
+                        </p>
+
+                        <div class="screenshot-grid">
+                            <div class="screenshot">
+                                <img src="https://placehold.co/600x400/1a1a1a/FFF?text=Screenshot+01" alt="Screenshot 1">
+                            </div>
+                            <div class="screenshot">
+                                <img src="https://placehold.co/600x400/1a1a1a/FFF?text=Screenshot+02" alt="Screenshot 2">
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <!-- Logo & Assets -->
-                <section>
-                    <h2 class="text-2xl font-bold text-white mb-6 header-line pb-2">Logo & Icon</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div>
-                            <div class="bg-[#262626] border border-[#404040] p-12 flex items-center justify-center mb-2">
-                                <i class="fa-solid fa-dragon text-6xl text-white"></i>
+                <section id="assets">
+                    <h2 class="section-title">Logo & Icon</h2>
+                    <div class="assets-grid">
+                        <div class="asset-item">
+                            <div class="asset-preview dark">
+                                <i class="fa-solid fa-dragon"></i>
                             </div>
-                            <a href="#" class="text-sm font-bold block">Download Logo (White) .png</a>
+                            <a href="#" class="download-link"><i class="fa-solid fa-download"></i> Download Logo (White)</a>
                         </div>
-                        <div>
-                            <div class="bg-white border border-[#404040] p-12 flex items-center justify-center mb-2">
-                                <i class="fa-solid fa-dragon text-6xl text-black"></i>
+                        <div class="asset-item">
+                            <div class="asset-preview light">
+                                <i class="fa-solid fa-dragon"></i>
                             </div>
-                            <a href="#" class="text-sm font-bold block">Download Logo (Black) .png</a>
+                            <a href="#" class="download-link"><i class="fa-solid fa-download"></i> Download Logo (Black)</a>
                         </div>
                     </div>
                 </section>
 
-                <!-- Contact -->
                 <section>
-                    <h2 class="text-2xl font-bold text-white mb-6 header-line pb-2">Contact</h2>
-                    <dl class="space-y-4">
-                        <div>
-                            <dt class="font-bold text-gray-300">Inquiries</dt>
-                            <dd class="text-gray-400"><a href="mailto:hello@cobrin.com">hello@cobrin.com</a></dd>
-                        </div>
-                        <div>
-                            <dt class="font-bold text-gray-300">Twitter</dt>
-                            <dd class="text-gray-400"><a href="https://twitter.com">twitter.com/cobrin</a></dd>
-                        </div>
-                        <div>
-                            <dt class="font-bold text-gray-300">Web</dt>
-                            <dd class="text-gray-400"><a href="#">cobrin.com</a></dd>
-                        </div>
-                    </dl>
+                    <h2 class="section-title">Contact</h2>
+                    <div class="contact-card">
+                         <dl class="contact-grid">
+                            <div>
+                                <dt>Inquiries</dt>
+                                <dd><a href="mailto:hello@cobrin.com">hello@cobrin.com</a></dd>
+                            </div>
+                            <div>
+                                <dt>Twitter</dt>
+                                <dd><a href="https://twitter.com">@CobrinStudios</a></dd>
+                            </div>
+                            <div>
+                                <dt>Web</dt>
+                                <dd><a href="#">cobrin.com</a></dd>
+                            </div>
+                        </dl>
+                    </div>
                 </section>
 
-                <div class="text-center pt-12 pb-8">
-                     <p class="text-gray-600 text-xs"> presskit() by Rami Ismail (Vlambeer) - inspired design</p>
+                <div class="footer">
+                     <p> 
+                        presskit() by Rami Ismail (Vlambeer) - inspired design<br>
+                        &copy; 2025 Cobrin Studios
+                     </p>
                 </div>
 
             </main>
         </div>
     </div>
-
 </body>
 </html>
